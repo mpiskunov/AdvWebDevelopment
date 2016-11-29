@@ -1,0 +1,13 @@
+extends layout
+
+block content
+ h1=title
+ form.form-horizontal(action="/form", method="post", role="form")
+        .form-group
+            label.control-label(for="name") Name         
+                input#name.form-control(name="name")        
+            label.control-label(for="email") Email    
+                input#name.form-control(name="email")        
+            label.control-label(for="comments") Comments    
+                input#name.form-control(name="comments")        
+            input(type="submit" value="Add my review") 
