@@ -1,0 +1,7 @@
+<h1>{{vm.phone.name | uppercase}}</h1>
+<!--Once a phone is clicked, the information is displayed with this styling-->
+<div class="content">
+    <img ng-src="{{vm.phone.imageUrl}}" />
+    <p ng-if="vm.phone.carrier.length > 0"><strong>Carrier:</strong> {{vm.phone.carrier}}</p>
+    <p>{{vm.phone.snippet}}</p>
+</div>
